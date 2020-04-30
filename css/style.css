@@ -1,12 +1,17 @@
 body {
-    background-color: rgb(236, 229, 170);
+    background-color: rgb(151, 148, 117);
 }
 h1{
-        color: tomato;
+        color: rgb(138, 56, 41);
 }
            
-
  
 h2 {
     color: rgb(184, 43, 18);
+}
+p {
+    color: black;
+}
+li {
+    color: black;
 }

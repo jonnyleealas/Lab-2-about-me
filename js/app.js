@@ -1,6 +1,6 @@
 'use strict';
 
-alert('lets play a game!');
+/*alert('lets play a game!');
 // asks name
 var userName= prompt('First what is your name?');
 console.log('prompt for username.User answered:' + userName);
@@ -44,17 +44,68 @@ if(wrestled.toLowerCase() === 'yes'){
 var burger= prompt('Do you like burgers ' + userName + ' ?');
 
 if(burger.toLowerCase() === 'yes'){
-    alert(userName + ' I am proud of you!');
+  alert(userName + ' I am proud of you!');
 
 } else if(burger.toLowerCase() === 'no'){
-    alert('You are probably more of a taco person  ' + ', ' + ' huh ' + userName + ' ?');
+  alert('You are probably more of a taco person  ' + ', ' + ' huh ' + userName + ' ?');
 }
 
 var fun= prompt('Did you have fun ' + userName + ' ?');
 
 if(fun.toLowerCase() === 'yes'){
-    alert('That makes one of us ' + userName + '.');
+  alert('That makes one of us ' + userName + '.');
 
 } else if(fun.toLowerCase() === 'no'){
-    alert('It was not meant to be fun ' + userName + ' ...' + ' trust me ' + '.');
+  alert('It was not meant to be fun ' + userName + ' ...' + ' trust me ' + '.');
+}*/
+
+
+
+//alert('I have a few more questions for ya ' + userName + '!');
+
+
+/*var answer = 4;
+for(var i = 0; i < 4; i++ ){
+  var favoriteNum = prompt('Can you guess my favorite number? You have 4 tries!');
+  if(i === 3){
+    alert('out of guesses');
+  } else if(favoriteNum == answer){
+    alert('You Got It! ' + answer + ' is my favorite number!');
+    break;
+  } else if( favoriteNum > answer){
+    alert('Too high!');
+  } else if ( favoriteNum < answer){
+    alert('Too Low');
+  //} else alert('You ran out of tries');
+  }
 }
+if( i === 4 ){
+  alert('my favorite number was 4.');
+} */
+
+
+var answers= ['drake', 'eminem', 'snoop'];
+var answerLength = answers.length;
+
+
+for(var i= 0; i < 6; i++){
+  if(i === 6){
+    alert('out of guesses');
+  }var rapper= prompt('Who are my favorite rappers?');
+  if(rapper.toLowerCase()=== answers[0]){
+    prompt('correct');
+    break;
+  } else if (rapper.toLowerCase()=== answers[1]){
+    prompt('good job');
+    break;
+  } else if(rapper.toLowerCase()=== answers [2]){
+    prompt('great!');
+    break;
+  } else if(rapper.toLowerCase() !== answers){
+    alert('try again');
+  }
+}
+
+/*for (var i = 0; i < answerLength; i++){
+  alert('thanks');
+}*/
