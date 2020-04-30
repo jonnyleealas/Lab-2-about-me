@@ -10,34 +10,39 @@ alert('Nice to meet you ' + userName);
 //continues convo
 alert('Ok ' + userName + ' lets play yes or no questions');
 
+function lastDance(){
+  var lastDance= prompt('Did you watch the Last dance with MJ ' + userName + ' ? ');
+  if(lastDance.toLowerCase() === 'yes'){
+    score++;
+    alert('Me Too! ' + userName);
 
-var lastDance= prompt('Did you watch the Last dance with MJ ' + userName + ' ? ');
-if(lastDance.toLowerCase() === 'yes'){
-  score++;
-  alert('Me Too! ' + userName);
-
-} else if(lastDance.toLowerCase() === 'no'){
-  alert('You should give it a shot ' + userName);
-} var giveItAShot= prompt('Have you ever shot a basketball ' + userName + ' ?');
-
-if(giveItAShot.toLowerCase() === 'yes'){
-  score++;
-  alert('Good you will see why Jordan is the Goat!');
-
-} else if(giveItAShot.toLowerCase() === 'no'){
-  alert('Hey I get it. Basketball is not for everyone');
+  } else if(lastDance.toLowerCase() === 'no'){
+    alert('You should give it a shot ' + userName);
+  } 
 }
-var wrestled = prompt('Have you wrestled a bear ' + userName + ' ?');
-if(wrestled.toLowerCase() === 'yes'){
-  alert('You are brave ' + userName + '!');
-  score++;
+function ballGame(){
+  var giveItAShot= prompt('Have you ever shot a basketball ' + userName + ' ?');
 
-} else if(wrestled.toLowerCase() === 'no'){
-  alert('Good Choice ' + userName + ' !');
+  if(giveItAShot.toLowerCase() === 'yes'){
+    score++;
+    alert('Good you will see why Jordan is the Goat!');
+
+  } else if(giveItAShot.toLowerCase() === 'no'){
+    alert('Hey I get it. Basketball is not for everyone');
+  }
+}
+function wrestled(){
+  var wrestled = prompt('Have you wrestled a bear ' + userName + ' ?');
+  if(wrestled.toLowerCase() === 'yes'){
+    alert('You are brave ' + userName + '!');
+    score++;
+
+  } else if(wrestled.toLowerCase() === 'no'){
+    alert('Good Choice ' + userName + ' !');
+  }
 }
 
-
-
+function numberQuestion(){
 var answer = 4;
 for(var i = 0; i < 4; i++ ){
   var favoriteNum = prompt('Can you guess my favorite number? You have 4 tries!');
@@ -56,7 +61,8 @@ for(var i = 0; i < 4; i++ ){
     alert('my favorite number was 4.');
   }
 }
-
+}
+function music(){
 var answers= [ 'drake', 'eminem', 'snoop'];
 var answersP= [ ' Drake ', ' Eminem ' , ' Snoop'];
 var points= 0;
@@ -82,17 +88,17 @@ for(var i= 0; i < 6; i++){
     alert('out of guesses');
   }
   if(rapper.toLowerCase()=== answers[0]){
-    prompt('correct');
+    alert('correct');
     points ++;
     score++;
 
   } else if (rapper.toLowerCase()=== answers[1]){
-    prompt('good job');
+    alert('good job');
     points ++;
     score++;
 
   } else if(rapper.toLowerCase()=== answers [2]){
-    prompt('great!');
+    alert('great!');
     points ++;
     score++;
 
@@ -102,6 +108,12 @@ for(var i= 0; i < 6; i++){
     alert('My favorite rappers are ' + answersP + '.');
   }
 }
-
+}
+lastDance();
+ballGame();
+wrestled();
+numberQuestion();
+music();
 alert('Wow thanks for playing! You got ' + score + ' out of 7!');
+
 
