@@ -1,17 +1,42 @@
 body {
-    background-color: rgb(235, 229, 166);
-}
+background-image: url(../img/beasty--HxIhfS_dUk-unsplash.jpg);
+padding: 300px;
+                         
+   }
+
+
+
+
+/* body {
+    background-color: rgb(255, 255, 255);
+} */
 h1{
         color: rgb(146, 67, 52);
+       padding: 30px;
+       border-style: solid;   
+       text-align: center;
+}
+img {
+    float: left;
+    
+ padding: 20px;
+   border-radius: 40px;
 }
            
  
 h2 {
     color: rgb(184, 43, 18);
 }
-p {
+p { 
     color: black;
+   
+  
+   
 }
 li {
     color: black;
+}
+#jay{
+float: inline-end;
+   
 }
